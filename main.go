@@ -54,7 +54,7 @@ func main() {
 	r.HandleFunc("/health", healthHandler)
 	r.HandleFunc("/", rootHandler)
 	r.HandleFunc("/details", detailsHandler)
-	log.Println("Server is up and running on port 80")
+	log.Println("Server is up and running on port 8080")
 
-	log.Fatal(http.ListenAndServe(":80", r))
+	log.Fatal(http.ListenAndServe(":8080", r))
 }

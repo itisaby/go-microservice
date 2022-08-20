@@ -4,9 +4,9 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
-    image: go=app-ms:latest
+    image: go=app-ms2:latest
     ports:
-      - "80:80"
+      - "8080:8080"
     restart: always
     networks:
       - web
